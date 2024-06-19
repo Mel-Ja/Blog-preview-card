@@ -1,0 +1,110 @@
+:root {
+    --main-yellow: #F4CF4D;
+    --secondary-yellow: #F4CC50;
+    --light-grey: #8a8a88;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+
+}
+
+html {
+    font-family: 'Figtree';
+}
+
+*, *>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: var(--main-yellow);
+}
+
+.main {
+    /* height: 900px; */
+    padding-block: 2rem;
+}
+
+
+
+.card, .btn--tiny, .card__img {
+    border-radius: .6rem;
+}
+
+.card {
+    margin-inline: auto;
+    background-color: white;
+    padding: 1.5rem;
+    max-width: 90%;
+    width: 600px;
+
+    border: solid 2px black;
+
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+    box-shadow: rgba(0, 0, 0, 1) 2px 2px 0;
+
+    transition: all 150ms ease-in-out;
+}
+
+
+.btn--tiny {
+    background-color: var(--secondary-yellow);
+    padding: .5rem 1rem;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.card__date {
+    font-weight: bold;
+}
+
+
+
+.card__img {
+    width: 100%;
+}
+
+.card__title {
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.card__title:hover {
+    color: var(--main-yellow);
+    cursor: pointer;
+}
+
+
+
+.card__text {
+    color: var(--light-grey);
+}
+
+.card__userInfo {
+    /* background-color: cadetblue; */
+}
+.card__userInfo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card__userInfo__name {
+    font-weight: bold;
+}
+
+.card--shadow-hover {
+    box-shadow: rgb(23, 23, 23) 8px 8px 0;
+}
